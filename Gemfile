@@ -52,7 +52,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 2.0'
   gem 'factory_girl_rails', "~> 4.3.0"
   gem 'faker',  "~> 1.3.0" # Allows you to create fake data for factory girl to use. http://faker.rubyforge.org/
-  gem 'shoulda-matchers', '~> 2.5.0'
+  gem 'shoulda-matchers', '~> 2.6.0'
   # Autotest Stuff
   gem "autotest", "~> 4.4.6"
   gem "autotest-standalone", "~> 4.5.11"
