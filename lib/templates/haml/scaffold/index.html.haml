@@ -1,0 +1,33 @@
+= content_for :title, "<%= plural_table_name.humanize %>"
+
+#<%= plural_table_name.dasherize %>
+
+  .panel.panel-default
+    .panel-heading
+      .panel-title
+        %h4
+          = title
+          .badge
+            = @<%= plural_table_name %>.total_count
+          .pull-right= new_link <%= class_name %>
+      .clearfix
+    %table.table.table-bordered.table-striped.table-hover
+      %thead
+        %tr
+        <%- attributes.each do |attribute| -%>
+          %th <%= attribute.human_name %>
+        <%- end -%>
+          %th Actions
+      %tbody
+        = empty_table_text(@<%= plural_table_name %>, <%= attributes.count + 1%>)
+        - @<%= plural_table_name %>.each do |<%= singular_table_name %>|
+          %tr.text_center
+          <%- attributes.each do |attribute| -%>
+            %td= <%= singular_table_name %>.<%= attribute.name %>
+          <%- end -%>
+            %td
+              = show_link <%= singular_table_name %>
+              = edit_link <%= singular_table_name %>
+              = destroy_link <%= singular_table_name %>
+    .panel-footer.text-center
+      = paginate @<%= plural_table_name %>

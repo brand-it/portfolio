@@ -1,0 +1,10 @@
+= content_for :title, "<%= singular_table_name.humanize %>"
+
+= error_summery(@<%= singular_table_name %>)
+
+.panel.panel-default
+  .panel-heading
+    .panel-title
+      %strong= title.upcase
+      %small.text-muted new
+  = render '<%= plural_table_name %>/form'

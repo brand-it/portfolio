@@ -1,0 +1,12 @@
+!!! 5
+%html(lang="en")
+
+  =render "shared/head"
+ 
+  %body
+     
+    = render 'shared/navigation'
+    = render 'shared/content'
+    = render 'shared/footer'
+    = javascript_include_tag "application"
+    = yield :javascript

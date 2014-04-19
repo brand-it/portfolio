@@ -1,0 +1,10 @@
+%div{ style: "height: 3em" }
+.navbar.navbar-inverse.navbar-fixed-bottom
+  .navbar-inner
+    .container
+      %p.text-muted.text-center{ style: "padding-top: 1em" }
+        &copy; 
+        = link_to "Rackspace", "http://www.rackspace.com"
+        = Date.today.year
+        &bull;
+        =l Time.zone.now, format: :long

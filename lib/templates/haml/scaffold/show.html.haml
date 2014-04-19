@@ -1,0 +1,21 @@
+=content_for :title, @<%= singular_table_name %>.respond_to?(:name) ? @<%= singular_table_name %>.name.titleize : "<%= singular_table_name.humanize.titleize %>"
+  
+.panel.panel-default
+  .panel-heading
+    .panel-title
+      %h4
+        = title.upcase
+        %small.text-muted show
+  %table.table.table-hover.table-bordered.lead
+    %tbody
+    <%- attributes.each do |attribute| -%>
+      %tr
+        %td
+          %label.label.label-info <%= attribute.human_name.downcase %>
+          = @<%= singular_table_name %>.<%= attribute.name %>
+    <%- end -%>
+  
+  .panel-footer
+    = edit_link @<%= singular_table_name %>
+    = destroy_link @<%= singular_table_name %>
+    = cancel_link <%= plural_table_name %>_path
