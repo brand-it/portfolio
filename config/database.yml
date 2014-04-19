@@ -1,0 +1,19 @@
+defaults: &defaults
+  adapter: postgresql
+  username: bran0899
+  password:
+  host: 127.0.0.1
+  encoding: utf8
+
+development:
+  <<: *defaults
+  database: brandtlareau_development
+  
+test: &test
+  <<: *defaults
+  database: brandtlareau_test<%= ENV['TEST_ENV_NUMBER'] %>
+  
+# Other
+# uat:
+#   <<: *defaults
+#   database: brandtlareau_uat
