@@ -23,5 +23,9 @@ module ApplicationHelper
     flash_messages.join("\n").html_safe
   end
   
+  def ldatetime(dt, options = {})
+    dt ? content_tag(:span,l(dt, options)) : nil
+  end
+  
   
 end

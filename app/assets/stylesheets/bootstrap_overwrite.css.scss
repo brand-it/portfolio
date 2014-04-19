@@ -1,0 +1,63 @@
+$navbar-default-bg: #C5513B;
+$navbar-default-color: #FFF;
+$navbar-default-link-color: #FFF;
+$navbar-default-link-hover-color: #CECECE;
+$navbar-default-link-active-color: #FFF;
+$kaminari-color: #4A69AF;
+$navbar-default-toggle-icon-bar-bg: #FFF;
+$navbar-default-toggle-hover-bg: #C5513B;
+$navbar-margin-bottom: 0px;
+$body-bg: #000;
+@import "bootstrap";
+
+body {
+  background-image: url('bg-body.gif');
+}
+
+.color-inverted {
+  color: #FFF !important;
+}
+.featurette {
+  color: white;
+}
+
+.featurette-heading {
+margin-top: 85px;
+}
+
+.dl-horizontal .label.label-info {
+  margin-bottom: 3px;
+}
+
+.navbar-brand {
+  padding: 6px 15px;
+}
+.navbar-brand .navbar-icon {
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+
+ul.pagination {
+  margin: 5px 0px 0px 0px;
+}
+
+ul.pagination li a:hover {
+ border-color: $kaminari-color + 50; 
+}
+
+ul.pagination li a,
+ul.pagination li.gap a {
+  color: $kaminari-color;
+  border-color: $kaminari-color;
+}
+
+ul.pagination li.active a {
+  background-color: $kaminari-color;
+  border-color: $kaminari-color;
+}
+
+ul.pagination li.active a:hover {
+  background-color: $kaminari-color;
+  border-color: $kaminari-color;
+}

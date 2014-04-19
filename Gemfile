@@ -10,7 +10,15 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem "haml", "~> 4.0.4"
+gem 'haml-rails', '~> 0.5.2'
+gem 'simple_form', '~> 3.0.1' # Creates easy to generate forms for you https://github.com/plataformatec/simple_form
+gem 'kaminari', '~> 0.15.0' # Pagination solution https://github.com/amatsuda/kaminari
+gem 'responders', "~> 1.0.0" # This handles all the flash. https://github.com/plataformatec/responders
+gem 'therubyracer', platforms: :ruby
 
+gem 'bootstrap-sass', '~> 3.1.1'
+gem 'font-awesome-rails', '~> 4.0.3.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby

@@ -1,53 +1,19 @@
-/ .dropdown
-/   %button#dropdownMenu1.btn.dropdown-toggle.sr-only{"data-toggle" => "dropdown", type: "button"}
-/     Dropdown
-/     %span.caret
-/   %ul.dropdown-menu{"aria-labelledby" => "user", role: "menu"}
-/     %li{role: "presentation"}
-/       %a{href: "#", role: "menuitem", tabindex: "-1"} Action
-/ 
-/ %nav.navbar.navbar-default.navbar-custom.navbar-static-top{role: "navigation"}
-/   .container-fluid
-/     .navbar-header
-/       %button.navbar-toggle{type: "button", data: {target: ".navbar-collapse", toggle: "collapse"}}
-/         %span.sr-only Toggle navigation
-/         %span.icon-bar
-/         %span.icon-bar
-/         %span.icon-bar
-/       = link_to root_path, class: "navbar-brand" do
-/         = image_tag "apple-touch-icon.png", class: "navbar-icon"
-/         %span.hidden-sm Document Management
-/ 
-/     .navbar-collapse.collapse
-/       %ul.nav.navbar-nav
-/         %li{class: active_link(document_templates_path)}
-/           = link_to "Document Templates", document_templates_path
-/         %li.dropdown
-/           %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
-/             Document Info
-/             %b.caret
-/           %ul.dropdown-menu
-/             %li{class: active_link(document_types_path)}
-/               = link_to "Document Types", document_types_path
-/             %li.divider
-/             %li{class: active_link(document_tokens_path)}
-/               = link_to "Document Tokens", document_tokens_path
-/             %li{class: active_link(document_token_options_path)}
-/               = link_to "Document Token Options", document_token_options_path
-/ 
-/ 
-/       %ul.nav.navbar-nav.navbar-right
-/         %li.dropdown
-/           = link_to '#', data: {toggle: 'dropdown'} do
-/             = image_tag current_user.avatar.url(:thumb), class: "img-circle", size: "20x20"
-/             = current_user.display_name
-/             %b.caret
-/           %ul.dropdown-menu
-/             %li
-/               = link_to destroy_user_session_path do
-/                 = fa_icon('sign-out')
-/                 Logout
-/             %li
-/               = link_to update_avatar_users_path do
-/                 %i.glyphicon.glyphicon-refresh
-/                 Update Avatar
+.dropdown
+  %button#dropdownMenu1.btn.dropdown-toggle.sr-only{"data-toggle" => "dropdown", type: "button"}
+    Dropdown
+    %span.caret
+  %ul.dropdown-menu{"aria-labelledby" => "user", role: "menu"}
+    %li{role: "presentation"}
+      %a{href: "#", role: "menuitem", tabindex: "-1"} Action
+
+%nav.navbar.navbar-default.navbar-custom.navbar-static-top.navbar-inverse{role: "navigation"}
+  .container-fluid
+    .navbar-header
+      %button.navbar-toggle{type: "button", data: {target: ".navbar-collapse", toggle: "collapse"}}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to root_path, class: "navbar-brand" do
+        = image_tag "apple-touch-icon.png", class: "navbar-icon"
+        %span.hidden-sm.oleo-script.bold Brandt Lareau

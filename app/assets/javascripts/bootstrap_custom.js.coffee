@@ -1,0 +1,2 @@
+jQuery ->
+  $('#content [title]').tooltip()

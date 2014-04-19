@@ -1,0 +1,183 @@
+#welcome
+
+  #welcome-carousel.carousel.slide{"data-ride" => "carousel"}
+    / Indicators
+    %ol.carousel-indicators
+      %li.active{data: {"slide-to" => 0, target: "#welcome-carousel"}}
+      %li{data: {"slide-to" => 1, target: "#welcome-carousel"}}
+    / Wrapper for slides
+    .carousel-inner
+      .item.active
+        .jumbotron
+          .container.text-center
+            = image_tag 'me.jpg', width: 140, height: 140, class: 'img-circle'
+            %p My mission in life and my job is to be the best programmer in the world. It is shooting for the stars of course but anything in life should be about going for the best you can be.
+            %p Really my goal is to do everything that I can to be the best programmer and a "A" class web developer
+        .carousel-caption
+          %h1.oleo-script Personal Mission Statement
+      .item
+        .jumbotron
+          .container
+            %script{ src: "https://gist.github.com/newdark/11097979.js"}
+        .carousel-caption
+          %h1.oleo-script Code Examples
+    / Controls
+    %a.left.carousel-control{href: "#welcome-carousel", data: {slide: "prev" }}
+      %span.glyphicon.glyphicon-chevron-left
+    %a.right.carousel-control{href: "#welcome-carousel", data: {slide: 'next'}}
+      %span.glyphicon.glyphicon-chevron-right
+      
+  .row.color-inverted
+    .col-md-8.col-md-offset-2
+
+      %h2
+        Experence
+        %span.text-muted So much experence it will blow your mind
+      %p.lead Just kidding I don't have a lot of experence but the experence I do have is more then most. Considering I have been doing web developement for over 7 years no and I have been going to school at the same time I would say that my knolage base is greater then most.      
+  .row
+    .col-6.col-sm-6.col-lg-4
+      .thumbnail{style: "height: 485px"}
+        = image_tag 'r3dux.png', width: 300, height: 200, class: 'img-circle'
+        .caption.color-inverted
+          %h2 
+            R3dux
+            %small Ruby on Rails
+          %p This was one of my first websites that I ever built. It is personal website and it is old but it can teach a lot to you if you use it.
+          %p
+            %a.btn.btn-default{href: "http://www.r3dux.net", role: "button"} View R3dux »
+    / /span
+    .col-6.col-sm-6.col-lg-4
+      .thumbnail{style: "height: 485px"}
+        = image_tag "icon300x200.png", width: 300, height: 200
+      
+        .caption.color-inverted
+          %h2 
+            Mobdex
+            %small Ruby on Rails
+          %p IT was a search system that never really got of the ground. However it was a good opportunity to build something that I have yet to do. It teaches me how to search other people sites and pull information off the screen. Some times a good idea however never works out the way you expect.
+          %p
+            %a.btn.btn-default{href: "https://github.com/newdark/mobdex", role: "button"} View Github Repo »
+    / /span
+    .col-6.col-sm-6.col-lg-4
+      .thumbnail{style: "height: 485px"}
+        = image_tag "icon300x200.png", width: 300, height: 200
+    
+        .caption.color-inverted
+    
+          %h2 
+            Minecraft Overview
+            %small Python, Ruby on Rails
+          %p This was going to be a map creator however the tools need to make it required a lot of understanding of the game minecraft. I did not want to keep up to data on all the changes also in order to keep it working there was a difficulty downloading the maps from the servers. This was because the minecraft server has no API's.
+          %p
+            %a.btn.btn-default{href: "https://github.com/newdark/minecraft-overview-web", role: "button"} View Github Repo »
+
+  .row
+    .col-sm-12
+      .panel
+        .panel-heading.text-center.oleo-script
+          %h3 PROFESSIONAL EXPERIENCE
+        .panel-body
+          %h4.clearfix
+            .pull-left
+              %b Rackspace Hosting, 
+              %small San Antonio, TX
+            .pull-right
+              %b 2012 to Present
+            %hr
+          %b{title: "Title"} Ruby on Rails Web Developer
+          .row
+            .col-sm-12
+              %p
+                Rackspace is a web hosting company. They provide services such as Cloud hosing and they are one of the smaller companies in the market. They also provide one of the few open source Cloud hosing products.
+              %p
+                My Job is to provide a solutions of there sales department. Projects
+                %ul
+                  %li Proposal Manager (Contract Generation Program)
+                  %li Password Safe (Password Safe application for sharing Passwords)
+                  %li Messenger (Approval System to notify users that they have task to complete) * Product Catalog (Inventory that we can sell to the customer)
+                  %li Document Management (Contract generations application)
+              
+          %h4.clearfix
+            .pull-left
+              %b Self-Employed, 
+              %small Fresno, CA
+            .pull-right
+              %b
+                2008 to 2012
+            %hr
+    
+          %b{title: "Title"} Self-Employed, Web Developer / Web Contractor
+          .row
+            .col-sm-12
+              %p Start up company for developing and creating new and innovative Web 2.0 sites. Most web sites utilize Rails and PHP.
+              %p Provided new a creative designed applications using Test Driven Development (TDD). Provided excellent customer feedback on users activities on the site.
+          
+          %h4.clearfix
+            .pull-left
+              %b ModalSoftware, 
+              %small Visalia, CA
+            .pull-right
+              %b 2007 to 2008
+            %hr
+          
+          %b{title: "Title"} Web Developer / Consultant 
+          .row
+            .col-sm-12
+              %p Modal designed and maintained Actionrev, which marketed their services to the diesel repair industry. Job responsibilities included customer service, server maintenance, web development, bug tracking, and improved usability.
+              %ul
+                %li Helped build Actionrev from the ground up along with other application.
+                %li Learned Ruby on Rails, JavaScript, Apache, and HTML/CSS
+                %li Managed customer complaints along with any feature upgrades that users might request.
+              
+  .row
+    .col-sm-12
+      .panel
+        .panel-heading.text-center.oleo-script
+          %h3 PROFESSIONAL DEVELOPMENT
+        .panel-body
+
+          %b Platforms I know
+          Linux, Windows XP, Windows 2000, Windows Vista, Windows 7, Mac 
+          %hr
+        
+          %b Languages
+          Ruby on Rails, HTML/CSS, Java, VB.NET, JavaScript, Ajax, SQL, MYSQL Frameworks: MVC, customer MVC frameworks
+          %hr
+
+          %b Applications Used 
+          Basecamp, Send Grid, New Relic, GitHub, Heroku, PayPal, Exceptional, Facebook Apps, Facebook Development Tools
+          %hr
+        
+          %b Methodologies 
+          Waterfall, TDD, BDD, OOAD, OOP
+          %hr
+
+          %b Development Tools
+          Dreamweaver, TextMate, Photoshop, MacBook, Firefox, Gmail, Unit Tests, Firebug, Windows, Chrome
+          %hr
+        
+          %b Technologies
+          XML, XSL, Restful, Radiant CMS, RedCloth, E-commerce
+          %hr
+        
+          %b Bug Tracking Tools
+          Exceptional, Exception Logger, Hoptoad        
+        
+  .row
+    .col-sm-6.col-sm-offset-3
+      .panel
+        .panel-header.text-center
+          %h1.oleo-script Contact Me
+        .panel-body
+          %form#contact-me.form{method: "post", role: "form", href: "#"}
+            .row
+              .col-xs-6.col-md-6.form-group
+                %input#name.form-control{autofocus: "", name: "name", placeholder: "Name", required: "", type: "text"}/
+              .col-xs-6.col-md-6.form-group
+                %input#email.form-control{name: "email", placeholder: "Email", required: "", type: "email"}/
+            %textarea#message.form-control{name: "message", placeholder: "Message", rows: "5"}
+            %br/
+            .row
+              .col-xs-12.col-md-12.form-group
+                %button.btn.btn-primary.pull-right{type: "submit"} Submit
+      
