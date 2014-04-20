@@ -11,15 +11,14 @@
         .jumbotron
           .container.text-center
             = image_tag 'me.jpg', width: 140, height: 140, class: 'img-circle'
-            %p My mission in life and my job is to be the best programmer in the world. It is shooting for the stars of course but anything in life should be about going for the best you can be.
-            %p Really my goal is to do everything that I can to be the best programmer and a "A" class web developer
-        .carousel-caption
+            %p My goes are to be make something that no one has ever seen. Which is well almost imposible. 
+        .carousel-caption.hidden-xs
           %h1.oleo-script Personal Mission Statement
       .item
         .jumbotron
           .container
             %script{ src: "https://gist.github.com/newdark/11097979.js"}
-        .carousel-caption
+        .carousel-caption.hidden-xs
           %h1.oleo-script Code Examples
     / Controls
     %a.left.carousel-control{href: "#welcome-carousel", data: {slide: "prev" }}
@@ -36,7 +35,7 @@
       %p.lead Just kidding I don't have a lot of experence but the experence I do have is more then most. Considering I have been doing web developement for over 7 years no and I have been going to school at the same time I would say that my knolage base is greater then most.      
   .row
     .col-6.col-sm-6.col-lg-4
-      .thumbnail{style: "height: 485px"}
+      .thumbnail
         = image_tag 'r3dux.png', width: 300, height: 200, class: 'img-circle'
         .caption.color-inverted
           %h2 
@@ -47,7 +46,7 @@
             %a.btn.btn-default{href: "http://www.r3dux.net", role: "button"} View R3dux »
     / /span
     .col-6.col-sm-6.col-lg-4
-      .thumbnail{style: "height: 485px"}
+      .thumbnail
         = image_tag "icon300x200.png", width: 300, height: 200
       
         .caption.color-inverted
@@ -59,7 +58,7 @@
             %a.btn.btn-default{href: "https://github.com/newdark/mobdex", role: "button"} View Github Repo »
     / /span
     .col-6.col-sm-6.col-lg-4
-      .thumbnail{style: "height: 485px"}
+      .thumbnail
         = image_tag "icon300x200.png", width: 300, height: 200
     
         .caption.color-inverted
